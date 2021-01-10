@@ -37,10 +37,22 @@ video {
     top: 0;
     right: 0;
     object-fit: cover;
-    opacity: 0.9;
+    z-index: -1;
+}
+
+.overlay-1 {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(41, 40, 40);
+        z-index: -1;
+        opacity: 0.4;
 }
 
 .text {
+    color: white;
     position: relative;
     z-index: 10;
 }
@@ -55,6 +67,10 @@ video {
 .logo h3 {
     font-size: 25px;
     text-transform: uppercase;
+}
+
+.logo i:hover {
+    cursor: pointer;
 }
 
 .heading {
@@ -142,7 +158,311 @@ video {
 
 .menu ul li a:hover{
     cursor: pointer;
-    color: turquoise;
+    border-bottom: 2px solid black;
+}
+
+
+/* Hotels Styling Starts Here  */
+
+.hotel-container {
+    height: 60vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+#navbar {
+    width: 100%;
+    height: 10vh;
+    padding: 50px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar ul {
+    display: flex;
+}
+#navbar ul li {
+    margin-left: 30px;
+}
+#navbar ul li a{
+    color: white;
+    font-weight: bold;
+}
+#navbar ul li a:hover{
+    cursor: pointer;
+    border-bottom: 2px solid white;
+}
+
+.opened-tab {
+    border-bottom: 2px solid white;
+}
+
+.hotel-branding {
+    height:30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.hotel-branding p{
+    max-width: 60%;
+    margin: auto;
+}
+#video-2{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60vh;
+    z-index: -1;
+}
+
+.overlay-2 {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    background-color: rgb(41, 40, 40);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#hotel-form-container {
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+#hotel-form {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+#hotel-form div {
+    margin-bottom: 10px;
+}
+
+#hotel-form input {
+    width: 100%;
+    overflow: hidden;
+}
+
+#btn-1 {
+    width: 150px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 5px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+#btn-1:hover {
+    cursor: pointer;
+    letter-spacing: 9px;
+}
+
+#submit-btn {
+   text-align: center;
+}
+
+/* Footer Styling Starts Here  */
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+footer div {
+    margin-bottom: 20px;
+}
+footer i {
+    margin-right: 20px;
+}
+footer i:hover {
+    color: rgb(78, 77, 77);
+    cursor: pointer;
+}
+
+/* Stories Styling Starts Here  */
+
+.stories-container {
+    height: 60vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.stories-branding {
+    height:30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.stories-branding h1{
+    max-width: 70%;
+    margin: auto;
+}
+.stories-branding p{
+    max-width: 70%;
+    margin: auto;
+}
+
+#video-3{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60vh;
+    z-index: -1;
+}
+
+.overlay-3 {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    background-color: rgb(41, 40, 40);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.main-stories-container {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-areas: 
+            'story1 story2'
+            'story3 story4';
+}
+
+.stories {
+    width: 100%;
+    text-align: center;
+}
+
+.stories img{
+    width: 100%;
+    height: 400px;
+}
+
+.stories h3{
+    text-transform: uppercase;
+}
+.stories p{
+    text-align: justify;
+}
+
+#story-1 {
+    grid-area: 'story1';
+}
+#story-2 {
+    grid-area: 'story2';
+}
+#story-3 {
+    grid-area: 'story3';
+}
+#story-4 {
+    grid-area: 'story4';
+}
+
+.overlay {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    background-color: rgb(41, 40, 40);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Contact Form Styking Starts Here  */
+
+.contact-form-container {
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+.contact-form-container video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#contact-form {
+    width: 50%;
+    margin: auto;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+#contact-form div {
+    margin-bottom: 10px;
+}
+
+#contact-form label {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#contact-form input {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    overflow: hidden;
+}
+
+#btn-2 {
+    width: 150px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+#btn-2:hover {
+    cursor: pointer;
+    letter-spacing: 9px;
+}
+
+#sign-up-btn {
+   text-align: center;
 }
 
 /* Media Queries Starts Here  */
@@ -240,6 +560,7 @@ video {
 
     .showcase {
         padding: 20px;
+        overflow: hidden;
     }
 
     .showcase.active {
@@ -274,7 +595,7 @@ video {
     }
 
     .showcase.active {
-        right: 200px;
+        right: 120px;
     }
 
     .heading h1 {
@@ -286,18 +607,29 @@ video {
     }
 
     .heading p {
-        max-width: 50%;
+        max-width: 100%;
         font-size: 12px;
     }
 
     .menu {
-        width: 200px;
+        width: 120px;
         font-size: 15px;
         line-height: 50px;
     }
 
     .social-icons {
         bottom: 10px;
+    }
+
+    #explore-btn{
+        font-size: 10px;
+    }
+    .heading a{
+        width: 60px;
+        padding: 3px;
+    }
+    .heading a:hover{
+        width: 90px;
     }
 }
 
