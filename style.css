@@ -208,7 +208,8 @@ video {
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    letter-spacing: 5px;
     font-size: 20px;
 }
 
@@ -252,6 +253,8 @@ video {
 
 #hotel-form input {
     width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
     overflow: hidden;
 }
 
@@ -288,7 +291,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
 }
 
 footer div {
@@ -393,30 +395,32 @@ footer i:hover {
     grid-area: 'story4';
 }
 
-.overlay {
-    width: 100%;
-    height: 60vh;
-    position: absolute;
-    top: 0;
-    background-color: rgb(41, 40, 40);
-    z-index: -1;
-    opacity: 0.4;
-}
-
 /* Contact Form Styking Starts Here  */
 
 .contact-form-container {
     width: 100%;
     height: 100vh;
     color: white;
+    overflow: hidden;
 }
-.contact-form-container video {
+.contact-form-container img {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+.overlay-4 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(41, 40, 40);
+    z-index: -1;
+    opacity: 0.4;
 }
 
 #contact-form {
@@ -469,6 +473,7 @@ footer i:hover {
 
 @media only screen and (max-width: 1080px){
 
+    /* For Showcase */
     .showcase {
         padding: 70px;
     }
@@ -494,10 +499,13 @@ footer i:hover {
         font-size: 25px;
         line-height: 50px;
     }
+
 }
 
 
 @media only screen and (max-width: 768px){
+
+    /* For Showcase  */
 
     .showcase {
         padding: 60px;
@@ -524,9 +532,53 @@ footer i:hover {
         font-size: 20px;
         line-height: 50px;
     }
+
+    /* For Stories  */
+
+    .main-stories-container {
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+
+    /* For Hotels */
+
+    #navbar {
+        padding: 10px;
+    }
+
+    .hotel-branding {
+        padding-top: 70px;
+    }
+
+    .hotel-branding h1{
+        font-size: 1.5em;
+    }
+
+    .hotel-branding p{
+        max-width: 80%;
+    }
+
+    /* For Stories  */
+
+    .stories-branding {
+        padding-top: 70px;
+    }
+
+    .stories-branding h1{
+        font-size: 1.5em;
+    }
+
+    .main-stories-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 480px){
+
+    /* For Showcase  */
 
     .showcase {
         padding: 50px;
@@ -553,10 +605,23 @@ footer i:hover {
         font-size: 15px;
         line-height: 50px;
     }
+
+    /* For Hotels  */
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hotel-branding p{
+        max-width: 80%;
+    }
 }
 
 
 @media only screen and (max-width: 480px) {
+
+    /* For Showcase  */
 
     .showcase {
         padding: 20px;
@@ -585,10 +650,76 @@ footer i:hover {
         font-size: 15px;
         line-height: 50px;
     }
+
+    /* For Hotels */
+
+    #navbar ul li {
+        margin-left: 15px;
+    }
 }
 
+@media only screen and (max-width: 380px) {
+
+    /* For Hotels  */
+
+    #navbar ul li {
+        font-size: 12px;
+    }
+
+    .hotel-branding h1{
+        font-size: 1em;
+    }
+    
+    .hotel-branding p{
+        font-size: 0.7em;
+    }
+
+    #btn-1 {
+        width: 100px;
+    }
+
+    #btn-2 {
+        width: 100px;
+    }
+
+    /* For Stories */
+
+    .main-stories-container {
+        padding: 20px;
+    }
+
+    .stories-branding h1{
+        font-size: 1em;
+    }
+
+    .stories-branding p{
+        font-size: 0.7em;
+    }
+
+    .stories img {
+        height: 200px;
+    }
+
+    /* For Footer  */
+
+    footer {
+        height: 15vh;
+        font-size: 10px;
+        padding-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+
+    #navbar ul li {
+        font-size: 10px;
+        margin-left: 7px;
+    }
+}
 
 @media only screen and (max-height: 500px) {
+
+    /* For Showcase  */
 
     .showcase {
         padding: 25px;
@@ -631,5 +762,61 @@ footer i:hover {
     .heading a:hover{
         width: 90px;
     }
+
+    /* For Hotels  */
+
+    .hotel-container {
+        height: 80vh;
+    }
+
+    #video-2{
+        height: 80vh;
+    }
+
+    .overlay-2 {
+        height: 80vh;
+    }
+
+    .hotel-branding {
+        margin-top: 50px;
+    }
+    .hotel-branding h1{
+        font-size: 1.2em;
+    }
+    .hotel-branding p{
+        font-size: 0.7em;
+    }
+
+    /* For Stories  */
+
+    .stories-container {
+        height: 80vh;
+    }
+
+    #video-3{
+        height: 80vh;
+    }
+
+    .overlay-3 {
+        height: 80vh;
+    }
+
+    .stories-branding {
+        margin-top: 50px;
+    }
+    .stories-branding h1 {
+        font-size: 1.2em;
+    }
+
+    .stories-branding p{
+        font-size: 0.7em;
+    }
+
+    /* For Footer  */
+
+    footer {
+        display: none;
+    }
+    
 }
 
